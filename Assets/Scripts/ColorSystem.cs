@@ -43,7 +43,7 @@ public class ColorSystem : MonoBehaviour {
         }
 
         yield return new WaitForEndOfFrame();
-        recorder.InitImage();
+        //recorder.InitImage();
         yield return null;
 
         while (true) {
@@ -59,9 +59,9 @@ public class ColorSystem : MonoBehaviour {
 
             yield return null;
 
-            if (colors.State.done || stop) {
-                break;
-            }
+            //if (colors.State.done || stop) {
+            //    break;
+            //}
         }
 
         Shutdown();
